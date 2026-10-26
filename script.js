@@ -1,10 +1,10 @@
 const products = [
   {id:1,name:"Caminha Nuvem",description:"Conforto de abraço",price:129.90,category:"Conforto",label:"MAIS AMADO",image:"https://images.unsplash.com/photo-1541599540903-216a46ca1dc0?auto=format&fit=crop&w=800&q=80"},
   {id:2,name:"Brinquedo Mordedor",description:"Diversão sem fim",price:39.90,category:"Brinquedos",label:"DIVERSÃO",image:"https://images.unsplash.com/photo-1535294435445-d0c6c9c7c4c7?auto=format&fit=crop&w=800&q=80"},
-  {id:3,name:"Comedouro Minimal",description:"Design para todo dia",price:69.90,category:"Cães",label:"DESIGN",image:"https://images.unsplash.com/photo-1589924691995-400dc9acom?auto=format&fit=crop&w=800&q=80"},
+  {id:3,name:"Comedouro Minimal",description:"Design para todo dia",price:69.90,category:"Cães",label:"DESIGN",image:"https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=800&q=80"},
   {id:4,name:"Arranhador de Sisal",description:"Diversão para gatinhos",price:89.90,category:"Gatos",label:"GATINHOS",image:"https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=800&q=80"},
   {id:5,name:"Bolinha Interativa",description:"Movimento e alegria",price:29.90,category:"Brinquedos",label:"PLAY TIME",image:"https://images.unsplash.com/photo-1535294435445-d0c6c9c7c4c7?auto=format&fit=crop&w=800&q=80"},
-  {id:6,name:"Manta Aconchego",description:"Um cantinho quentinho",price:79.90,category:"Conforto",label:"ACONCHEGO",image:"https://images.unsplash.com/photo-151猫?auto=format&fit=crop&w=800&q=80"}
+  {id:6,name:"Manta Aconchego",description:"Um cantinho quentinho",price:79.90,category:"Conforto",label:"ACONCHEGO",image:"https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=800&q=80"}
 ];
 
 const money = value => value.toLocaleString("pt-BR", {style:"currency",currency:"BRL"});
