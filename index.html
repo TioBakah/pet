@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f6f0">
+  <meta name="description" content="PetViva: produtos escolhidos com carinho para cães e gatos.">
+  <title>PetViva — carinho em cada detalhe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">Frete grátis nas compras acima de R$ 149 <span>♡</span></div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="PetViva início"><span class="brand-mark">✿</span> pet<span>viva</span></a>
+    <nav class="main-nav" aria-label="Navegação principal"><a href="#produtos">Produtos</a><a href="#beneficios">Por que PetViva?</a><a href="#depoimentos">Quem ama, indica</a></nav>
+    <div class="header-actions"><button class="icon-button" id="search-toggle" aria-label="Abrir busca">⌕</button><button class="cart-button" id="cart-open" aria-label="Abrir carrinho">Sacola <span id="cart-count">0</span></button></div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy"><p class="eyebrow"><span class="eyebrow-dot"></span> UM MIMO PARA QUEM É TUDO</p><h1>Mais carinho.<br><em>Mais rabinhos</em><br>felizes.</h1><p class="hero-text">Encontre os pequenos grandes prazeres que deixam a vida do seu pet ainda mais especial.</p><a class="button button-dark" href="#produtos">Descobrir favoritos <span>↗</span></a><div class="hero-note"><span class="mini-avatars">🐶 🐱</span><span>Feito para eles.<br><strong>Aprovado por você.</strong></span></div></div>
+      <div class="hero-art"><div class="hero-blob"></div><img class="hero-pet" src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=1000&q=85" alt="Cachorro feliz olhando para a câmera"><div class="floating-tag tag-top"><span>✦</span> Amor em cada detalhe</div><div class="floating-tag tag-bottom"><span class="tag-icon">♡</span><span><strong>Seu pet merece</strong><br>o melhor de todos os dias</span></div><span class="decor decor-star">✳</span><span class="decor decor-heart">♡</span></div>
+    </section>
+    <section class="category-strip" aria-label="Categorias"><a href="#produtos" data-category="Todos" class="category active"><span>✦</span> Tudo para eles</a><a href="#produtos" data-category="Cães" class="category"><span>🐶</span> Cães</a><a href="#produtos" data-category="Gatos" class="category"><span>🐱</span> Gatos</a><a href="#produtos" data-category="Brinquedos" class="category"><span>🎾</span> Brinquedos</a><a href="#produtos" data-category="Conforto" class="category"><span>☁</span> Conforto</a></section>
+    <section class="products-section" id="produtos"><div class="section-heading"><div><p class="eyebrow">ESCOLHIDOS COM AMOR</p><h2>Pequenos mimos,<br><em>grandes alegrias.</em></h2></div><div class="product-tools"><label class="search-box" id="search-box"><span>⌕</span><input id="product-search" type="search" placeholder="Buscar produto..." aria-label="Buscar produto"></label><span class="product-count" id="product-count">6 produtos</span></div></div><div class="product-grid" id="product-grid" aria-live="polite"></div></section>
+    <section class="benefits" id="beneficios"><div class="benefit-intro"><p class="eyebrow">A GENTE CUIDA DE QUEM VOCÊ AMA</p><h2>Amor de pet.<br><em>Jeito PetViva.</em></h2></div><div class="benefit"><span class="benefit-icon">♡</span><h3>Escolha com carinho</h3><p>Produtos pensados para o bem-estar e a alegria do seu companheiro.</p></div><div class="benefit"><span class="benefit-icon">✦</span><h3>Qualidade que abraça</h3><p>Detalhes que fazem a diferença na rotina de vocês.</p></div><div class="benefit"><span class="benefit-icon">⌁</span><h3>Compra sem complicação</h3><p>Uma experiência simples, gostosa e cheia de cuidado.</p></div></section>
+    <section class="testimonial" id="depoimentos"><span class="quote-mark">“</span><blockquote>É muito gostoso encontrar uma loja que entende que eles são parte da família.</blockquote><div class="quote-author"><span class="quote-avatar">🐾</span><span><strong>Uma família PetViva</strong><small>Gente que ama de verdade</small></span></div></section>
+    <section class="newsletter"><div><p class="eyebrow">UM CARINHO NA SUA CAIXA DE ENTRADA</p><h2>Novidades fofas<br><em>vêm por aí.</em></h2></div><form id="newsletter-form" class="newsletter-form"><label for="email">Seu melhor e-mail</label><div class="newsletter-field"><input id="email" type="email" placeholder="voce@email.com" required><button type="submit" aria-label="Inscrever e-mail">→</button></div><small id="newsletter-message">Sem spam. Só amor e novidades.</small></form></section>
+  </main>
+  <footer class="footer"><a class="brand" href="#"><span class="brand-mark">✿</span> pet<span>viva</span></a><p>Feito com amor para quem faz parte da família. <span>© <span id="year"></span> PetViva</span></p><a href="#produtos">Voltar ao topo ↑</a></footer>
+  <div class="overlay" id="cart-overlay"></div><aside class="cart-drawer" id="cart-drawer" aria-label="Sacola de compras" aria-hidden="true"><div class="cart-header"><div><p class="eyebrow">SEU CANTINHO DE MIMOS</p><h2>Sua sacola <span id="drawer-count">(0)</span></h2></div><button id="cart-close" class="close-button" aria-label="Fechar sacola">×</button></div><div class="cart-items" id="cart-items"><div class="empty-cart"><span>♡</span><h3>Está tão vazinha...</h3><p>Que tal escolher um mimo para seu melhor amigo?</p></div></div><div class="cart-footer"><div class="subtotal"><span>Subtotal</span><strong id="cart-subtotal">R$ 0,00</strong></div><small>Frete calculado na finalização do pedido.</small><button class="button button-dark checkout-button" id="checkout-button">Continuar compra <span>→</span></button><button class="continue-shopping" id="continue-shopping">Continuar explorando</button><p class="checkout-note">Demonstração de loja: o checkout ainda precisa ser conectado a um meio de pagamento.</p></div></aside><div class="toast" id="toast" role="status"></div>
+</body>
+</html>
